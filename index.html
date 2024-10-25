@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فورم درخواستی برای وظیفه</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>فورم درخواستی برای وظیفه</h2>
+        <form id="jobApplicationForm">
+            <label>عنوان بست که شما درخواست میدهید:</label>
+            <input type="text" name="jobTitle" required>
+
+            <label>وکنسی نمبر:</label>
+            <input type="text" name="vacancyNumber" required>
+
+            <label>نمایندگی یا موقعیت:</label>
+            <input type="text" name="location" required>
+
+            <label>آیا در شش ماه گذشته درخواستی برای کدام بست در نوی کابل بانک ارسال کرده اید؟</label>
+            <input type="text" name="previousApplication" required>
+
+            <label>اسم مکمل:</label>
+            <input type="text" name="fullName" required>
+
+            <label>نام پدر:</label>
+            <input type="text" name="fatherName" required>
+
+            <label>جنسیت:</label>
+            <select name="gender" required>
+                <option value="مرد">مرد</option>
+                <option value="زن">زن</option>
+            </select>
+
+            <label>شماره تذکره:</label>
+            <input type="text" name="idNumber" required>
+
+            <label>تاریخ تولد (روز/ماه/سال):</label>
+            <input type="date" name="birthDate" required>
+
+            <label>شماره تماس:</label>
+            <input type="text" name="contactNumber" required>
+
+            <label>ایمیل آدرس:</label>
+            <input type="email" name="email" required>
+
+            <label>درجه تحصیل:</label>
+            <select name="educationLevel" required>
+                <option value="فارغ صنف دوازده">فارغ صنف دوازده</option>
+                <option value="فوق بکلوریا">فوق بکلوریا</option>
+                <option value="لیسانس">لیسانس</option>
+                <option value="ماستر">ماستر</option>
+                <option value="داکتر">داکتر</option>
+            </select>
+
+            <label>رشته تحصیلی:</label>
+            <input type="text" name="studyField" required>
+
+            <label>سال فراغت:</label>
+            <input type="text" name="graduationYear" required>
+
+            <label>اسناد تحصیلی خود را آپلود نمایید:</label>
+            <input type="file" name="educationDocument" required>
+
+            <label>تجربه کاری مرتبط به وظیفه:</label>
+            <input type="text" name="workExperience" required>
+
+            <label>خلص سوانح (CV) خود را آپلود نمایید:</label>
+            <input type="file" name="cvFile" required>
+
+            <label>
+                <input type="checkbox" name="confirmation" required>
+                تعهد میسپارم که اطلاعات ثبت شده در این فرم، درست است. هرگاه خلاف آن ثابت شود، اداره حق دارد من را از پروسه حذف نماید
+            </label>
+
+            <button type="submit">ارسال</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
